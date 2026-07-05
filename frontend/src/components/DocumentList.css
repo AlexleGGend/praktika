@@ -1,0 +1,86 @@
+﻿.document-list {
+  margin: 30px 0;
+}
+
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.document-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s;
+}
+
+.document-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.document-icon {
+  font-size: 28px;
+}
+
+.document-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.document-name {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.document-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 0.85rem;
+}
+
+.status-badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.status-uploading {
+  background: #bee3f8;
+  color: #2b6cb0;
+}
+
+.status-indexing {
+  background: #fbd38d;
+  color: #975a16;
+}
+
+.status-ready {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+.status-error {
+  background: #fed7d7;
+  color: #9b2c2c;
+}
+
+.document-date {
+  color: #a0aec0;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 640px) {
+  .document-grid {
+    grid-template-columns: 1fr;
+  }
+}
