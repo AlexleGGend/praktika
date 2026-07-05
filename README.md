@@ -34,5 +34,5 @@ chmod +x init.sh
 ```
 
 ## 👥 Команда
-- **Backend & DevOps**: [Имя напарника]
-- **Frontend & QA**: [Твое имя]
+- **Backend & DevOps**: [Быков Илья]
+- **Frontend & QA**: [Петунин Алексей]
